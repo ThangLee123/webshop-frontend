@@ -1,0 +1,81 @@
+/* Form */
+.form {
+    max-width: 60rem;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    // padding: 2px;
+    border-radius: 2px;
+}
+
+.form > div {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+.form label {
+    margin: 1rem 0;
+}
+
+.signin-btn {
+}
+
+.signin-btn:hover {
+    color: var(--primary-color);
+}
+
+.product__user-review-img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-left: 8px;
+    margin-right: 4px;
+}
+
+.product__user-rating span svg {
+    width: 18px !important;
+    height: 18px !important;
+    margin-right: -6px;
+    margin-top: 0px;
+}
+
+.product_user_review__input,
+.product_user_review__select,
+.product_user_review__textarea {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 0.1rem #a4a4a4 solid;
+    font-size: 1.6rem;
+    font-family: Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.product_user_review__input:hover,
+.product_user_review__select:hover,
+.product_user_review__textarea:hover {
+    border: 0.1rem #404040 solid;
+}
+
+.vnpay-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    width: 200px;
+    border-radius: 2px;
+    border: 2px solid transparent;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 8px 0px 8px 4px;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: all linear 0.18s;
+}
+
+.vnpay-button:hover {
+    border-color: var(--primary-color);
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}

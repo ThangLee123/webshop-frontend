@@ -1,0 +1,47 @@
+// Product Intro
+.product-list-header {
+    display: flex;
+    flex-direction: column;
+}
+.product-list-header__titile {
+    margin: 0 auto 10px;
+    font-weight: 700;
+    font-size: 3.2rem;
+}
+
+.product-list-header__sub-title {
+    margin: auto;
+    font-size: 1.6rem;
+    color: #687188;
+}
+
+.view-more-btn {
+    border-radius: 2px;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    padding: 12px 18px;
+    font-size: 15px;
+    background-color: #6773ff;
+    color: white;
+}
+
+@media (max-width: 739px) {
+    .product-list {
+        margin-top: 520px;
+    }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .product-list {
+        margin-top: 100px;
+    }
+}
+
+@media (width: 600px) {
+    .product-list {
+        margin-top: 800px;
+    }
+}

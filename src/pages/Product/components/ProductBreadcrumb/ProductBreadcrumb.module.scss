@@ -1,0 +1,28 @@
+.product-breadcrumb {
+    margin-top: var(--header-height);
+    padding: 70px 0;
+    display: flex;
+    background-color: var(--breadcrumb-background);
+}
+
+.product-breadcrumb__title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0;
+    text-align: center;
+    text-transform: capitalize;
+    color: #292b2c;
+    flex: 1;
+}
+
+.product-breadcrumb__link {
+    flex: 1;
+}
+.product-breadcrumb__link ol {
+    justify-content: center;
+}
+
+.product-breadcrumb__link li {
+    font-size: 16px;
+}

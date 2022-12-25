@@ -1,0 +1,169 @@
+/* Button Navigation */
+.previousButton {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: url('https://seekicon.com/free-icon-download/arrow-circle-right_1.svg') no-repeat center center / 24px;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+.nextButton {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: url('https://seekicon.com/free-icon-download/arrow-circle-right_1.svg') no-repeat center center / 24px;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+
+.previousButton:hover,
+.nextButton:hover {
+    background: url('https://seekicon.com/free-icon-download/arrow-circle-right_1.svg') no-repeat center center / 24px;
+}
+
+.previousButton {
+    left: 0;
+    -webkit-transform: rotate(180deg) translateY(calc(50% + 0px));
+    transform: rotate(180deg) translateY(calc(50% + 0px));
+}
+
+/* .previousButton:hover {
+  left: -10px;
+} */
+
+.nextButton {
+    right: 0;
+}
+
+/* .nextButton:hover {
+  right: -10px;
+} */
+
+/* Animation */
+.slide h1 {
+    transition: all 1.5s ease;
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+    opacity: 0;
+}
+
+.slide button {
+    transition: all 2s ease, background-color 0.5s, color 0.5s, border-color 0.5s;
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+    opacity: 0;
+}
+
+.slide p {
+    transition: all 1.3s ease;
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+    opacity: 0;
+}
+
+.slide section * {
+    transition: all 0.3s ease;
+}
+
+.slide section img {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+    opacity: 0;
+}
+
+.slide section span {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+    opacity: 0;
+}
+
+.slide section span strong {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+    opacity: 0;
+}
+
+.slide.animateIn.previous h1,
+.slide.current h1,
+.slide.animateIn.next h1,
+.slide.animateIn.previous button,
+.slide.current button,
+.slide.animateIn.next button,
+.slide.animateIn.previous p,
+.slide.current p,
+.slide.animateIn.next p,
+.slide.animateIn.previous section *,
+.slide.current section *,
+.slide.animateIn.next section * {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    /* -webkit-transition-delay: 0.9s;
+  transition-delay: 0.9s; */
+    opacity: 1;
+}
+
+.slide.animateIn.previous p,
+.slide.animateIn.next p {
+    -webkit-transition-delay: 0.9s;
+    transition-delay: 0.9s;
+}
+
+.slide.animateIn.previous h1,
+.slide.animateIn.next h1 {
+    -webkit-transition-delay: 1.1s;
+    transition-delay: 1.1s;
+}
+
+.slide.animateIn.previous button,
+.slide.animateIn.next button {
+    -webkit-transition-delay: 1.3s;
+    transition-delay: 1.3s;
+}
+
+.slide.animateIn.previous section img,
+.slide.animateIn.next section img {
+    -webkit-transition-delay: 1.3s;
+    transition-delay: 1.3s;
+}
+
+.slide.animateIn.previous section span,
+.slide.animateIn.next section span {
+    -webkit-transition-delay: 1.4s;
+    transition-delay: 1.4s;
+}
+
+.slide.animateIn.previous section span strong,
+.slide.animateIn.next section span strong {
+    -webkit-transition-delay: 1.5s;
+    transition-delay: 1.5s;
+}
+
+.slide.animateOut h1 {
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+.slide.animateOut p {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.slide.animateOut section span {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+.slide.animateOut section span strong {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}

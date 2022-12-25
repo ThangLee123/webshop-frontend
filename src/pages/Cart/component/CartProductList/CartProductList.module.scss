@@ -1,0 +1,27 @@
+.cart-product-list {
+    margin-top: calc(var(--header-height) * 2);
+}
+.cart-product-list__space-remove-header {
+    size: middle;
+    display: flex;
+    justify-content: center;
+}
+.cart-product-list__space-remove-content {
+    cursor: pointer;
+    color: var(--orange-text);
+}
+.cart-product-list__space-remove-content:hover {
+    color: var(--black-color);
+}
+.cart-product-list__actions-selectQty select {
+    border: 0.1rem solid var(--product-text-color);
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.cart-image-product {
+    width: 70px;
+    height: 70px;
+}

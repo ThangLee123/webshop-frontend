@@ -1,0 +1,40 @@
+.seller-info-table {
+    background-color: whitesmoke;
+    border: 0.1rem solid transparent;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 10px;
+}
+
+.seller-info-table__avatar {
+    max-width: 5rem;
+    width: 100%;
+}
+
+.seller-info-table__name {
+    font-size: 1rem;
+}
+
+.seller-info-table__review li {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.seller-info-table__mail {
+    margin-top: 0.5rem;
+    color: var(--blue-color);
+}
+.seller-info-table__mail a:hover {
+    opacity: 70%;
+}
+
+.seller-info-table__description {
+    margin-top: 1rem;
+}
+
+.seller-productlist {
+    min-width: 32%;
+    height: 100%;
+    background: whitesmoke;
+    border-radius: 20px;
+}

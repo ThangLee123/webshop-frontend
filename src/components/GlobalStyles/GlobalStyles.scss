@@ -1,0 +1,204 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('../grid.css');
+@import '~antd/dist/antd.css';
+@import url('../slider-animations.css');
+
+:root {
+    --primary-color: #ff324d;
+    --white-color: #fff;
+    --black-color: #333;
+    --blue-color: #1677ff;
+    --breadcrumb-background: #f7f8fb;
+    --product-text-color: #687188;
+    --orange-text: orangered;
+    --border-cart-color: #dee2e6;
+    --header-height: 56px;
+    --subHeader-height: 90px;
+    --input-searchbox-width: 500px;
+    --banner-list-height: 300px;
+    --cart-total-height: 300px;
+    --cart-total-width: 540px;
+    --cart-btn-height: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
+
+button,
+input,
+[tabindex] {
+    outline: none;
+    border: none;
+}
+
+body a {
+    color: var(--text-color);
+    text-decoration: none;
+    // transition: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+// Remove css atnd
+a:hover {
+    color: unset;
+}
+
+.ant-btn-primary {
+    background-color: var(--primary-color);
+}
+
+.ant-btn-danger:hover,
+.ant-btn-danger:focus {
+    color: #fff !important;
+    border-color: #ff7875;
+    background: #ff7875;
+}
+
+.ant-dropdown {
+    width: 240px;
+}
+.ant-dropdown-menu-item {
+    padding: 12px 12px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.ant-dropdown-menu-item:hover {
+    color: var(--primary-color);
+}
+.ant-dropdown-menu-item-icon {
+    margin-right: 18px;
+}
+
+.ant-alert-description a:hover {
+    color: var(--primary-color);
+}
+
+.ant-table-thead > tr > th {
+    text-align: center;
+}
+
+.ant-table-tbody > tr > td {
+    text-align: center;
+}
+
+.ant-radio-checked .ant-radio-inner {
+    border-color: var(--primary-color) !important ;
+}
+
+.ant-radio-checked .ant-radio-inner:after {
+    background-color: var(--primary-color);
+}
+
+.ant-radio:hover .ant-radio-inner {
+    border-color: var(--primary-color);
+}
+
+.login-form {
+    max-width: 100%;
+}
+.login-form-forgot {
+    float: right;
+}
+.ant-col-rtl .login-form-forgot {
+    float: left;
+}
+.login-form-button {
+    width: 100%;
+}
+
+// Alert
+.success {
+    color: #20a020;
+}
+.danger {
+    color: #a02020;
+}
+textarea:focus {
+    // outline: none;
+    // border: 1px solid rgb(36, 36, 36);
+    // border-radius: 20px;
+}
+
+//   body .ant-steps-item-title:hover {
+//     color: var(--primary-color) !important
+//   }
+
+//   .ant-steps-icon .anticon svg {
+//     color: var(--primary-color);
+// }
+// .ant-steps-item-container {
+//     color: var(--primary-color) !important;
+// }
+// .ant-steps-item-wait .ant-steps-item-icon,
+// .ant-steps-item-finish .ant-steps-item-icon {
+//     border-color: var(--primary-color);
+//     color: var(--primary-color);
+//   }
+
+//   .ant-steps .ant-steps-item:not(.ant-steps-item-active) > .ant-steps-item-container[role=button]:hover .ant-steps-item-title, .ant-steps .ant-steps-item:not(.ant-steps-item-active) > .ant-steps-item-container[role=button]:hover .ant-steps-item-subtitle, .ant-steps .ant-steps-item:not(.ant-steps-item-active) > .ant-steps-item-container[role=button]:hover .ant-steps-item-description {
+//     color: var(--primary-color);
+//   }
+
+//   .ant-steps .ant-steps-item:not(.ant-steps-item-active):not(.ant-steps-item-process) > .ant-steps-item-container[role=button]:hover .ant-steps-item-icon {
+//     border-color: var(--primary-color);
+// }
+
+// .ant-steps .ant-steps-item:not(.ant-steps-item-active):not(.ant-steps-item-process) > .ant-steps-item-container[role=button]:hover .ant-steps-item-icon .ant-steps-icon {
+//     color: var(--primary-color);
+// }
+
+// .ant-steps-navigation .ant-steps-item::before {
+//     background-color: var(--primary-color);
+// }
+.ant-form-item {
+    max-width: 200px;
+}
+.alert {
+    border-radius: 15px 50px;
+}
+
+.ant-btn-primary {
+    border-color: var(--primary-color);
+    background: var(--primary-color);
+}
+.ant-btn-primary:hover,
+.ant-btn-primary:focus {
+    border-color: var(--primary-color);
+    background: var(--primary-color);
+}
+
+.ant-input-search .ant-input:hover,
+.ant-input-search .ant-input:focus {
+    border-color: var(--primary-color);
+}
+
+.ant-input:focus,
+.ant-input-focused {
+    box-shadow: none;
+}
+
+// pagination
+.container-pagination {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 18px;
+}
